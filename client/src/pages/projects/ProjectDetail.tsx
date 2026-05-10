@@ -80,6 +80,9 @@ export default function ProjectDetail() {
       riskIndex
     })) || []
   ) || []
+
+  allRisks.sort((a: Risk, b: Risk) => b.risk_level - a.risk_level)
+
   return (
     <PageTransition>
       <div className="mx-auto max-w-6xl space-y-8" ref={contentRef}>
@@ -328,7 +331,7 @@ export default function ProjectDetail() {
                     <TableCell className="p-0">
                       <ul className="flex flex-col divide-y divide-slate-200">
                         {risk.response_plans.map((plan: ResponsePlan, index: number) => (
-                          <li key={index} className="p-2 min-h-10 flex text-left items-center text-sm wrap-break-word whitespace-normal">
+                          <li key={index} className="p-2 min-h-10 flex text-left items-center text-sm break-all whitespace-normal">
                             {plan.name}
                           </li>
                         ))}
@@ -337,7 +340,7 @@ export default function ProjectDetail() {
                     <TableCell className="p-0 text-left">
                       <div className="flex flex-col divide-y divide-slate-200">
                         {risk.response_plans.map((plan: ResponsePlan, index: number) => (
-                          <div key={index} className="px-4 py-2 min-h-10 flex items-center text-(--political) italic font-medium wrap-break-word whitespace-normal">
+                          <div key={index} className="px-4 py-2 min-h-10 flex items-center text-(--political) italic font-medium whitespace-normal break-all">
                             {/* <UserCircle size={16} className="mr-2" /> */}
                             {plan.owner}
                           </div>
