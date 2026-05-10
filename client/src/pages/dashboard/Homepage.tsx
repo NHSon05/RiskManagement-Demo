@@ -78,7 +78,7 @@ const HomePage: React.FC = () => {
     <PageTransition>
       <div className='space-y-8 bg-(--white)'>
           <div className='bg-(--bg-search) text-start rounded-lg p-6 space-y-4'>
-              <Title size='large' variant='dark'>Xin chào, Nguyễn Văn A</Title>
+              <Title size='large' variant='dark'>Xin chào, Dương Thị Hoài</Title>
               <p className='text-gray-800 text-[16px]'>
                   Chào mừng bạn đến với <span className='font-bold text-(--primary-btn)'>Risk Management</span>. 
                   Bắt đầu quản lý rủi ro của bạn một cách hiệu quả
