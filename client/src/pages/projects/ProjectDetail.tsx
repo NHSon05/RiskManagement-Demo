@@ -94,7 +94,7 @@ export default function ProjectDetail() {
               <h2 className="text-(--primary-btn) flex items-center">
                 <UserCircle size={20} className="mr-1" />
                 <span className="text-(--black) ml-1">
-                  Nguyễn Văn A
+                  Dương Thị Hoài
                 </span>
               </h2>
               <h2 className=" text-(--primary-btn) flex items-center">
